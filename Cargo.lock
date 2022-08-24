@@ -327,23 +327,20 @@ dependencies = [
 
 [[package]]
 name = "fltk"
-version = "1.3.11"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "70544ba95a9b037f0a8f65181f7e893377c1cd5499ff2950034e87728ae7e68e"
+version = "1.3.14"
+source = "git+https://github.com/fltk-rs/fltk-rs#8121ee34854cb29c88d9d3b7bd759ec4d6d02229"
 dependencies = [
  "bitflags",
  "crossbeam-channel",
  "fltk-sys",
- "lazy_static",
+ "once_cell",
  "paste",
- "ttf-parser",
 ]
 
 [[package]]
 name = "fltk-sys"
-version = "1.3.11"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cad0d5dac441caee8f153304bd0dbaf677e8a9a7d1b201471cf9e851e1c781c6"
+version = "1.3.14"
+source = "git+https://github.com/fltk-rs/fltk-rs#8121ee34854cb29c88d9d3b7bd759ec4d6d02229"
 dependencies = [
  "cmake",
 ]
@@ -1724,12 +1721,6 @@ name = "try-lock"
 version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "59547bce71d9c38b83d9c0e92b6066c4253371f15005def0c30d9657f50c7642"
-
-[[package]]
-name = "ttf-parser"
-version = "0.15.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7b3e06c9b9d80ed6b745c7159c40b311ad2916abb34a49e9be2653b90db0d8dd"
 
 [[package]]
 name = "typenum"
